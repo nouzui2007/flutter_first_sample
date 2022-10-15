@@ -12,10 +12,10 @@ class HelloApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final word = WordPair.random();
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Startup Name Generator',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('Startup Name Generator'),
         ),
         body: const Center(
           child: RandomWords(),
