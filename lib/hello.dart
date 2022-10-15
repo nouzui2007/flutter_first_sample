@@ -3,20 +3,22 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
 class HelloApp extends StatelessWidget {
   const HelloApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final word = WordPair.random();
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body: Center(
+          child: Text(word.asPascalCase),
         ),
       ),
     );
