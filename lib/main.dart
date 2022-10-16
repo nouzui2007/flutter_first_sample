@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:first_sample/hello.dart';
+import 'package:first_sample/layout_demo.dart';
 
 void main() {
   // runApp(const MyApp());
-  runApp(const HelloApp());
+  // runApp(const HelloApp());
+  runApp(const LayoutDemoApp());
 }
 
 class MyApp extends StatelessWidget {
